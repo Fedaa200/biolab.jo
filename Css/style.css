@@ -1,0 +1,232 @@
+* {
+  margin-left: 2px;
+  padding: 0;
+}
+/* styling every list */
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: rgb(221, 228, 252);
+}
+
+/* Styling Navbar */
+.navbar {
+  background-color: #e0e0e0;
+  height: 40px;
+}
+.nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.nav .icon {
+  float: right;
+}
+
+.new-transaction {
+  color: rgb(50, 103, 218);
+}
+.new-transaction::after {
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: rgb(50, 103, 218);
+  display: block;
+}
+.new-transaction:hover:after {
+  width: 100%;
+  transition: 0.5s;
+}
+.icon button {
+  background-color: red;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  margin-top: -4px;
+  border: 0px;
+}
+
+/* icon Search */
+.search {
+  width: 40px;
+  height: 27px;
+  margin-top: -3px;
+  border: 0px;
+  margin-left: -5px;
+  border-radius: 4px;
+  color: white;
+}
+.clear {
+  clear: both;
+}
+
+/* Patients Form */
+.lable {
+  top: 100px;
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+}
+.form {
+  padding: 8px 4px 4px 4px;
+  position: relative;
+  border: 1px solid rgb(226, 226, 226);
+  width: 100%;
+  background-color: white;
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Add some margin for the lable */
+.form-inline label {
+  margin: 5px 10px 5px 0;
+  font-size: 13px;
+  font-weight: bold;
+  padding-left: 2px;
+}
+
+/* Style the input fields */
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* make the from responsive and put the input inline */
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+/* Select part */
+.droup,
+.note {
+  width: 180px;
+  height: 41px;
+  border-radius: 5px;
+  border: 1px solid rgb(54, 113, 238);
+  margin-left: 0px;
+}
+
+.part2 {
+  vertical-align: middle;
+  margin: 5px 10px 5px 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  float: left;
+}
+/* make some shapes with  styling */
+.Medical-tests {
+  width: 80%;
+
+  border: 2px solid rgb(200, 202, 202);
+  float: left;
+  margin-left: 23px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.test::after {
+  content: "";
+  height: 3px;
+  width: 50px;
+  background-color: rgb(64, 102, 224);
+  display: block;
+  margin-left: -3px;
+}
+/* Part 3 The table for Medical analyzes */
+.test {
+  font-size: 20px;
+  color: rgb(64, 102, 224);
+}
+.test:hover:after {
+  font-size: 24px;
+  transition: 0.5s;
+}
+hr {
+  margin-top: -21px;
+}
+.total-price {
+  width: 130px;
+  height: 35px;
+  background-color: rgb(46, 145, 236);
+  border-radius: 20px;
+}
+.after-discount {
+  width: 130px;
+  height: 35px;
+  background-color: rgb(240, 90, 173);
+  border-radius: 20px;
+}
+.duration {
+  width: 130px;
+  height: 35px;
+  background-color: rgb(250, 142, 42);
+  border-radius: 20px;
+}
+.test-count {
+  width: 130px;
+  height: 35px;
+  background-color: #39a067;
+  border-radius: 20px;
+}
+.total-price,
+.after-discount,
+.duration,
+.test-count {
+  float: left;
+  text-align: center;
+  margin-left: 100px;
+}
+/* droup  list for Medical analyzes */
+.ABC select {
+  width: 94%;
+  height: 40px;
+  border: 1px solid rgb(192, 196, 199);
+  border-radius: 5px;
+}
+/* make simple styling for the table */
+table {
+  width: 99%;
+  border-collapse: collapse;
+}
+
+th {
+  background: rgb(46, 145, 236);
+  color: white;
+  font-weight: bold;
+}
+
+th {
+  padding: 6px;
+
+  text-align: left;
+}
+td {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
